@@ -1,13 +1,32 @@
 *
     box-sizing: border-box
     margin: 0
+    padding: 0
     font-size: 12.5px
+
+ul,ol 
+    list-style: none
+
+button
+    outline: none
+
 
 .container
     max-width: 1140px
     margin: auto
 
-@import "_variables.sass"
-@import "_fonts.sass"
+@import "_variables"
+@import "_fonts"
 @import "_header"
-@import "_search.sass"
+@import "_search"
+@import "_bascket"
+@import "_navigation"
+
+.button
+    padding: 15px 45px
+    color: $white
+    background-color: $btn-color
+    border: none
+    border-radius: 3px
+    font-family: $main-fonts
+    font-size: 15px

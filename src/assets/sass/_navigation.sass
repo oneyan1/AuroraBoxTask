@@ -1,0 +1,118 @@
+.navbar
+    width: 100%
+    &-elements
+        display: flex
+        justify-content: space-between
+        border-bottom: 1px solid $line-color
+    &-element
+        font-family: $main-fonts
+        font-weight: 700
+        text-transform: uppercase
+        font-size: 14px
+        padding-bottom: 30px
+        &-link
+            color: $main-font-color
+            text-decoration: none
+            transition: all .3s ease
+            &:hover
+                color: $active-color
+        .navbar-elements-first
+            position: absolute
+            min-width: 180px
+            padding-top: 12px
+            padding-bottom: 12px
+            border: 3px solid #eeeeee
+            background-color: $white
+            box-shadow: 0 0 13px rgba(0, 0, 0, 0.04)
+            font-weight: 300
+            display: none
+            margin-top: 12px
+            .navbar-element-first
+                padding: 14px 20px 14px 20px
+                text-transform: none
+                a
+                    text-decoration: none
+                    color: #000000
+                &:hover
+                    background-color: #f7f7f7
+                .navbar-elements-second
+                    display: none
+                    position: absolute
+                    right: -180px
+                    top: 0
+                    background-color: $white
+                    border: 3px solid #eeeeee
+                    box-shadow: 0 0 13px rgba(0, 0, 0, 0.04)
+                    min-width: 180px 
+                    padding: 
+                        top: 28px
+                        bottom: 28px
+                        left: 28px
+                    li
+                        padding: 10px
+                        a
+                            &:hover
+                                color: $active-color
+   
+        &:hover
+            .navbar-elements-first
+                display: block
+                .navbar-element-first
+                    &:hover
+                        .navbar-elements-second
+                            display: block
+
+
+//         &-hide
+//             display: none
+//             position: absolute
+//             min-width: 180px
+//             background-color: $white
+//             border: 3px solid #eeeeee
+//             box-shadow: 0 0 13px rgba(0, 0, 0, 0.04)
+//             margin-top: 15px
+//             padding-top: 15px
+//             padding-bottom: 15px
+//             &-second
+//                 right: -182px
+//                 top: 0
+//                 margin: 0
+    
+//         &:hover
+//             .navbar-elements-hide
+//                 display: block
+//         .static
+//             color: $main-font-color
+//             text-decoration: none
+//             transition: all .3s ease
+//             &:hover
+//                 color: $active-color
+//                 transition: all .3s ease
+//             &-hide
+//                 color: $main-font-color
+//                 text-decoration: none
+//                 font-size: 12px
+//                 &-second
+//                     color: $main-font-color
+//                     text-decoration: none
+//                     transition: all .2s ease
+//                     font-size: 12px
+//                     &:hover
+//                         color: $active-color
+//                         transition: all .2s ease       
+//         .hot
+//             color: $active-color
+
+//         &-hide
+//             padding: 15px 30px
+//             text-transform: none
+//             font-weight: 300
+//             &-second
+//                 padding: 10px 80px 10px 25px
+//             &:hover
+//                 color: $active-color
+//                 transition: all .2s ease
+//             &:hover
+//                 background-color: #f7f7f7
+    
+

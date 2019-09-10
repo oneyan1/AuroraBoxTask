@@ -5,9 +5,9 @@
         align-items: center
         padding-top: 35px
         padding-bottom: 60px
-    &-logo
     &-form
         position: relative
+        margin-left: 70px
         &__input
             border: none
             border-bottom: 1px solid black
@@ -23,20 +23,28 @@
             background: url(/assets/img/icons/icon__lens.png) center no-repeat
             width: 15px
             height: 15px
+            &:hover
+                cursor: pointer
+
 
     &-cart
-        &__link
-            text-decoration: none
-            position: relative
+        display: flex
+        position: relative
+        &:hover
+            cursor: pointer
+        &__counter
+            position: absolute
+            top: 20px
+            left: 15px
+            width: 20px
+            height: 20px
+            background-color: $active-color
+            border-radius: 50px
             display: flex
             justify-content: center
             align-items: center
-            &::after
-                // position: absolute
-                // content: "2"
-                // height: 20px
-                // width: 20px
-                // background-color: blue
-                // text-align: center
-                // vertical-align: middle
-                // border-radius: 50px
+            color: $white
+        &__text
+            font-family: Lato
+            font-weight: 700
+            margin-left: 10px

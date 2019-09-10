@@ -14,6 +14,7 @@
     <header class="header">
         <div class="header-line"></div>
         <div class="container">
+
             <div class="header-top">
                 <div class="header-contacts">
                     <div class="header-contacts__phone">
@@ -38,12 +39,118 @@
                     <img src="./assets/img/logo.png" alt="logo" class="header-logo__image">
                 </div>
                 <form action="#" class="header-form">
-                    <input class="header-form__input" type="text" placeholder="Co chcesz kupić?" required>
+                    <input class="header-form__input" type="text" placeholder="Co chcesz kupić?">
                     <button class="header-form__btn" type="submit"></button>
                 </form>
-                <div class="header-cart">
-                    <a href="#" class="header-cart__link"><img src="./assets/img/icons/icon__basket.png" alt="cart" class="header-cart__img">Twój koszyk</a>
+
+                <div class="header-bascket">
+                    <a class="header-cart">
+                        <img src="./assets/img/icons/icon__basket.png" alt="cart" class="header-cart__img">
+                        <span class="header-cart__counter">0</span>
+                        <span class="header-cart__text">Twój koszyk</span>   
+                    </a>
+
+                    <div class="bascket-popup">
+                        <div class="popup-text">
+                            <div class="popup-count">
+                                <span class="popup-count__text">Produkty w koszyku: </span>
+                                <span class="popup-count__quantity">2</span>
+                            </div>
+                            <div class="popup-sum">
+                                <span class="popup-sum__text">Kwota do zapłaty: </span>
+                                <span class="popup-sum__price">207.00 zł</span>
+                            </div>
+                        </div>
+                        <div class="popup-card">
+                            <div class="card-test">
+                                <div class="card-test-img">
+                                    <img src="assets/img/card1.png" alt="">
+                                </div>
+                                <div class="card-test-info">
+                                    <div class="card-test-info__name">
+                                        biustonosz push-up line mos 12
+                                    </div>
+                                    <div class="card-test-info__price">59.00 zł</div>
+                                    <div class="card-test-info__form">
+                                        <div class="card-test-info__input">
+                                            <span class="count">ilość:</span>
+                                            <input type="text">
+                                        </div>
+                                        <div class="card-test-info__btn">
+                                            <button class="icon-btn icon-btn__edit"></button>
+                                            <button class="icon-btn icon-btn__delete"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="card-test">
+                                    <div class="card-test-img">
+                                        <img src="assets/img/card2.png" alt="">
+                                    </div>
+                                    <div class="card-test-info">
+                                        <div class="card-test-info__name card-test-info__nameSale">
+                                            biustonosz push-up line RE 6
+                                        </div>
+                                        <div class="card-test-info__price card-test-info__priceSale">
+                                            79.00 zł
+                                            <span class="old-price">109.00zł</span>
+                                        </div>
+                                        <div class="card-test-info__form">
+                                            <div class="card-test-info__input">
+                                                <span class="count">ilość:</span>
+                                                <input type="text">
+                                            </div>
+                                            <div class="card-test-info__btn">
+                                                <button class="icon-btn icon-btn__edit"></button>
+                                                <button class="icon-btn icon-btn__delete"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                        <div class="popup-btn">
+                            <button class="button">Zobacz koszyk</button>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="header-naviagtion">
+                <nav class="navbar">
+                    <ul class="navbar-elements">
+                        <li class="navbar-element"><a class="navbar-element-link" href="#">Kategorie</a>
+                            <ul class="navbar-elements-first">
+                                <li class="navbar-element-first"><a href="#">Biustonosze</a>
+                                    <ul class="navbar-elements-second">
+                                        <li><a href="#">Bardotka</a></li>
+                                        <li><a href="#">Minimizer</a></li>
+                                        <li><a href="#">Multiway</a></li>
+                                        <li><a href="#">Push-up</a></li>
+                                        <li><a href="#">Soft</a></li>
+                                        <li><a href="#">Sportowe</a></li>
+                                        <li><a href="#">usztywniane</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navbar-element-first"><a href="#">Body</a></li>
+                                <li class="navbar-element-first"><a href="#">Majtki</a></li>
+                                <li class="navbar-element-first"><a href="#">Stroje kąpielowe</a></li>
+                                <li class="navbar-element-first"><a href="#">Bielizna erotyczna</a></li>
+                                <li class="navbar-element-first"><a href="#">Stroje sportowe</a></li>
+                                <li class="navbar-element-first"><a href="#">bieliznna wieczorowa</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-element"><a class="navbar-element-link" href="#">Nowości</a></li>
+                        <li class="navbar-element"><a class="navbar-element-link" href="#">Promocje</a></li>
+                        <li class="navbar-element"><a class="navbar-element-link" href="#">wyprzedaże</a></li>
+                        <li class="navbar-element"><a class="navbar-element-link" href="#">Kolekcje sezony</a></li>
+                        <li class="navbar-element"><a class="navbar-element-link" href="#">Nasza oferta</a></li>
+                        <li class="navbar-element"><a class="navbar-element-link" href="#">trendy 2018</a></li>
+                        <li class="navbar-element"><a class="navbar-element-link" href="#">blog</a></li>
+                        <li class="navbar-element"><a class="navbar-element-link" href="#">KONTAKT</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>

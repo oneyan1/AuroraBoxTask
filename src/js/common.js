@@ -1,1 +1,0 @@
-console.log("Im webpack starter pack on live dev server, SASS, JS, HTML compiler");

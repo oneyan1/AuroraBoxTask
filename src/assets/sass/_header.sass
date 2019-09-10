@@ -11,61 +11,21 @@
         position: relative
         font-family: $main-fonts
         font-weight: 400
+        border-right: 1px solid $line-color
     &-contacts
         display: flex
-        &__phone
-            display: flex
-            align-items: center
-            padding: 15px
-            color: $main-font-color
-            &::before
-                content: ""
-                display: flex
-                margin-right: 10px
-                width: 12px
-                height: 12px
-                background: url(/assets/img/icons/icon1.png) center no-repeat
-        &__email
-            display: flex
-            align-items: center
-            padding: 15px
-            color: $main-font-color
-            &::before
-                content: ""
-                display: flex
-                margin-right: 10px
-                width: 12px
-                height: 12px
-                background: url(/assets/img/icons/icon2.png) center no-repeat
-
     &-login
         display: flex
-        &__signin
-            display: flex
-            align-items: center
-            border: 
-                left: 1px solid $line-color
-                right: 1px solid $line-color
-            padding: 15px
-            color: $main-font-color
-            &::before
-                content: ""
-                display: flex
-                margin-right: 10px
-                width: 12px
-                height: 12px
-                background: url(/assets/img/icons/icon4.png) center no-repeat 
-
-        &__signup
-            display: flex
-            align-items: center
-            padding: 15px
-            border-right: 1px solid $line-color
-            color: $main-font-color
-            &::before
-                content: ""
-                display: flex
-                margin-right: 10px
-                width: 12px
-                height: 12px
-                background: url(/assets/img/icons/icon3.png) center no-repeat
+    &-link
+        display: flex
+        align-items: center
+        padding: 15px
+        color: $main-font-color
+        img
+            margin-right: 11px
+        &__login
+            padding-left: 20px
+            padding-right: 20px
+            border-left: 1px solid $line-color
+            
+        

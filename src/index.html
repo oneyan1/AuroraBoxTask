@@ -17,18 +17,22 @@
 
             <div class="header-top">
                 <div class="header-contacts">
-                    <a href="#" class="header-contacts__phone">
+                    <a href="#" class="header-link">
+                        <img src="assets/img/icons/icon1.png" alt="phone">
                         293 939 098
                     </a>
-                    <a href="#" class="header-contacts__email">
+                    <a href="#" class="header-link">
+                        <img src="assets/img/icons/icon2.png" alt="email">
                         kontakt@aurorabox.pl
                     </a>
                 </div>
                 <div class="header-login">
-                    <a href="#" class="header-login__signin">
+                    <a href="#" class="header-link header-link__login">
+                        <img src="assets/img/icons/icon4.png" alt="lock">
                         Zaloguj się
                     </a>
-                    <a href="#" class="header-login__signup">
+                    <a href="#" class="header-link header-link__login">
+                        <img src="assets/img/icons/icon3.png" alt="user">
                         Załóż konto
                     </a>
                 </div>
@@ -40,7 +44,9 @@
                 </div>
                 <form action="#" class="header-form">
                     <input class="header-form__input" type="text" placeholder="Co chcesz kupić?">
-                    <button class="header-form__btn" type="submit"></button>
+                    <button class="header-form__btn" type="submit">
+                        <img src="assets/img/icons/icon__lens.png" alt="">
+                    </button>
                 </form>
 
                 <div class="header-bascket">
@@ -77,8 +83,12 @@
                                             <input type="text" value="1" readonly>
                                         </div>
                                         <div class="card-test-info__btn">
-                                            <button class="icon-btn icon-btn__edit"></button>
-                                            <button class="icon-btn icon-btn__delete"></button>
+                                            <button class="icon-btn icon-btn__edit">
+                                                    <img src="assets/img/icons/icon__edit.png" alt="">
+                                            </button>
+                                            <button class="icon-btn icon-btn__delete">
+                                                    <img src="assets/img/icons/icon__delete.png" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -102,8 +112,12 @@
                                                 <input type="text" value="2" readonly>
                                             </div>
                                             <div class="card-test-info__btn">
-                                                <button class="icon-btn icon-btn__edit"></button>
-                                                <button class="icon-btn icon-btn__delete"></button>
+                                                <button class="icon-btn icon-btn__edit">
+                                                    <img src="assets/img/icons/icon__edit.png" alt="">
+                                                </button>
+                                                <button class="icon-btn icon-btn__delete">
+                                                    <img src="assets/img/icons/icon__delete.png" alt="">
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -119,8 +133,16 @@
 
             <div class="header-naviagtion">
                 <nav class="navbar">
+                    <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+                    <label for="menu" class="toggleMenu">
+                        <img src="assets/img/icons/menu-button.png" alt="ham">
+                        Menu
+                    </label>
                     <ul class="navbar-elements">
-                        <li class="navbar-element"><a class="navbar-element-link" href="#">Kategorie</a>
+                        <li class="navbar-element">
+                            <input type="checkbox" name="toggle" class="toggleSubMenu" id="sub_m1">
+                            <a class="navbar-element-link" href="#">Kategorie</a>
+                             <label for="sub_m1" class="toggleSubMenu"><!--tu mb icon--></label> 
                             <ul class="navbar-elements-first">
                                 <li class="navbar-element-first"><a href="#">Biustonosze</a>
                                     <ul class="navbar-elements-second">

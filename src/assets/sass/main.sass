@@ -7,8 +7,11 @@
 ul,ol 
     list-style: none
 
-button
+button, a
     outline: none
+    text-decoration: none
+    &:hover
+        cursor: pointer
 
 
 .container
@@ -22,6 +25,9 @@ button
 @import "_bascket"
 @import "_navigation"
 
+body
+    font-family: $main-fonts
+
 .button
     padding: 15px 45px
     color: $white
@@ -30,3 +36,7 @@ button
     border-radius: 3px
     font-family: $main-fonts
     font-size: 15px
+    transition: all .3s ease
+    &:hover
+        background-color: $active-color
+        transition: all .3s ease

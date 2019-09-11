@@ -19,7 +19,7 @@
     .header
         &-search
             padding-top: 25px
-            padding-bottom: 25px
+            padding-bottom: 0
         &-form
             &__input
                 padding-right: 70px
@@ -28,35 +28,81 @@
                 margin-right: 50px
             &__text
                 display: none
-    
+
+    //navigations block
     .navbar
-        &-elements
-            display: none
-            padding: 15px
-        &-element
-            padding-bottom: 10px
-
-    label.toggleMenu
-        display: flex
-    input.toggleMenu:checked + label.toggleMenu
-        background: $active-color
-        color: $white
-
-    input.toggleMenu:checked ~ .navbar-elements
-        display: block
-        
-    .navbar-element
-        .navbar-elements-first
+        label.toggleMenu
             display: block
-            left: 120px
-    // label.toggleSubMenu
-    //     position: absolute
-    //     top: 0
-    //     right: 0
-    //     width: 100%
-    //     height: 100%
-    //     display: block
+            transition: all .3s ease
+        ul
+            display: none
+            li
+                a
+                    padding: 10px 20px
+                .sub-menu
+                    display: none
+                    .sub-menu-dub
+                        display: none
 
-    // input.toggleSubMenu:checked ~ .navbar-elements-second
-    //     display: block
-    //     position: relative
+        input.toggleMenu:checked + label.toggleMenu
+            background: $active-color
+            color: $white
+            transition: all .3s ease
+
+        input.toggleMenu:checked ~ ul
+            display: block
+            position: relative
+
+        label.toggleSubMenu
+            display: block
+            position: absolute
+            top: 0
+            right: 0
+            width: 100%
+            height: 100%
+        
+        input.toggleSubMenu:checked ~ ul
+            display: block
+            position: relative
+            top: 0
+            right: 0
+
+        input.toggleSubMenu:checked ~ a
+            color: $active-color
+    
+@media(max-width: $extraSmall )
+    .header
+        &-top
+            border: none
+            justify-content: space-around
+        &-link
+            font-size: 10px
+            img
+                margin-right: 5px
+            &__login
+                border: none
+                padding: 4px
+        &-login
+            flex-direction: column
+    .header
+        &-search
+            justify-content: space-around
+            padding-top: 25px
+            padding-bottom: 10px
+        &-logo
+            &__image
+                display: none
+        &-form
+            &__input
+                padding-right: 80px
+
+    .bascket-popup
+        min-width: 250px
+        
+    .popup-card
+        display: none
+@media(max-width: 320px)
+    .header
+        &-form
+            &__input
+                padding-right: 10px
